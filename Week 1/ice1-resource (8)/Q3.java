@@ -8,7 +8,6 @@ public class Q3 {
 
         String[] words = s.split("\\s+");
 
-        int len = words.length;
         String result = "";
 
         for (int i = words.length - 1; i >= 0; i--) {

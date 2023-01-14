@@ -7,7 +7,29 @@ public class Q5 {
         int num = sc.nextInt();
 
         for (int i = 0; i < num; i++) {
-            System.out.print((char)('a' + (i % 26)) + " ");
+            System.out.print(((char) ('a' + (i % 26)) + " "));
         }
+
+        System.out.println();
+
+        for (int i = 0; i < num; i++) {
+            System.out.print(1 + i);
+            System.out.print(2 + i);
+            System.out.print(3 + i + " ");
+        }
+
+        System.out.println();
+
+        int j = 1;
+        for (int i = 1; i <= num; i++) {
+            while (j <= i) {
+                System.out.print(j);
+                j++;
+            }
+
+            j = 1;
+            System.out.println();
+        }
+
     }
 }
