@@ -2,33 +2,26 @@ import java.util.Scanner;
 
 public class Q4 {
     public static void main(String[] args) {
-        boolean isValid = false;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number:");
+        int num = sc.nextInt();
 
-        int product = -1;
-        String result = "";
+        int product = num;
 
-        do {
-            Scanner sc = new Scanner(System.in);
+        String output = "";
+
+        if (product < 0) {
+            System.out.println("No positive number is entered");
+            return;
+        }
+
+        while (num > 0) {
+            product *= num;
+            output += "x" + num;
             System.out.print("Enter number:");
-            int num = sc.nextInt();
+            num = sc.nextInt();
+        }
 
-            if (num < 0) {
-                isValid = true;
-
-                if (product == -1) {
-                    System.out.println("No positive number is entered");
-                } else {
-                    System.out.println(result + " = " + product);
-                }
-            }
-
-            if (product == -1) {
-                product *= num * -1;
-                result += num;
-            } else {
-                product *= num;
-                result  += " x " + num;
-            }
-        } while (!isValid);
+        System.out.println(output + "=" + product);
     }
 }
