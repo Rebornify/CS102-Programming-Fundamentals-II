@@ -27,8 +27,7 @@ public class Q6PartA {
      */
 
     public static void insertPlot(CommunityGarden garden, int length, int breadth) {
-        // insert your code here.
-        
+        garden.addPlot(length, breadth);
     }
 
 }

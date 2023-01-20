@@ -1,12 +1,12 @@
 public class BubbleTeaTest {
 
     public static void displayHasPearlsTest(BubbleTea cup) {
-        System.out.printf("%s has %s pearls in it%n", 
+        System.out.printf("%s has %s pearls in it\n", 
                 cup.getBrand(), cup.hasPearls() ? "" : "no");
     }
 
     public static void displaySweetnessTest(BubbleTea cup) {
-        System.out.printf("%s is %s%n", 
+        System.out.printf("%s is %s\n", 
                 cup.getBrand(), cup.isTooSweet() ? "too sweet" : "low in sugar");
     }
 
@@ -14,7 +14,7 @@ public class BubbleTeaTest {
         String brand1 = cup1.isSweeterThan(cup2) ? cup1.getBrand() : cup2.getBrand();
         String brand2 = cup1.isSweeterThan(cup2) ? cup2.getBrand() : cup1.getBrand();
 
-        System.out.printf("%s is sweeter than %s%n", brand1, brand2);
+        System.out.printf("%s is sweeter than %s\n", brand1, brand2);
     }
 
 
