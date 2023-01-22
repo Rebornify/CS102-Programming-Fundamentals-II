@@ -8,20 +8,21 @@ public class Q4 {
 
         int product = num;
 
-        String output = "";
-
         if (product < 0) {
             System.out.println("No positive number is entered");
             return;
         }
 
-        while (num > 0) {
+        product = 1;
+        String output = "";
+
+        while (num >= 0) {
             product *= num;
-            output += "x" + num;
+            output += " x " + num;
             System.out.print("Enter number:");
             num = sc.nextInt();
         }
 
-        System.out.println(output + "=" + product);
+        System.out.println(output.substring(3) + " = " + product);
     }
 }

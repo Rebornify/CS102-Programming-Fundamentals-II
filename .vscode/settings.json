@@ -3,6 +3,7 @@
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
         "Week 2/ice2-resource/BubbleTeaTest.jar",
-        "Week 2/ice2-resource/q6/CommunityGarden.jar"
+        "Week 2/ice2-resource/q6/CommunityGarden.jar",
+        "Week 2/ice2-resource/CashRegister.jar"
     ]
 }

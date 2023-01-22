@@ -21,15 +21,13 @@ public class Q5 {
         System.out.println();
 
         int j = 1;
-        for (int i = 1; i <= num; i++) {
-            while (j <= i) {
-                System.out.print(j);
-                j++;
+        for (int i = 1; i <= num;) {
+            if (j < i) {
+                System.out.printf("%d", j++);
+            } else {
+                System.out.printf("%d\n", i++);
+                j = 1;
             }
-
-            j = 1;
-            System.out.println();
         }
-
     }
 }
