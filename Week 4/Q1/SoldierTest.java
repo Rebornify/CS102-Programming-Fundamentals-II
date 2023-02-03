@@ -14,7 +14,5 @@ public class SoldierTest {
         System.out.println("Soldier's base allowance : " + s.getBaseAllowance());
         System.out.println("Soldier's gross allowance : " + s.getGrossAllowance());
 
-
-
     }
 }

@@ -1,4 +1,4 @@
-public class AdvancedBookingTicket extends Ticket{
+public class AdvancedBookingTicket extends Ticket {
     private int numDaysInAdvance;
 
     public AdvancedBookingTicket(String title, int numDaysInAdvance) {

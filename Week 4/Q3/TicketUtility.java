@@ -5,6 +5,7 @@ public class TicketUtility {
         if (ticketList == null || ticketList.isEmpty()) {
             return 0;
         }
+
         double sum = 0;
         for (Ticket t : ticketList) {
             sum += t.calculatePrice();

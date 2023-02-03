@@ -25,17 +25,10 @@ public class Q6PartB {
      * Note: Although you can use a for loop here, it is not necessary.
      */
     public static int getNumSmallLandPlots(CommunityGarden garden, int area) {
-        int count = 0;
         int numPlots = garden.getTotalPlots();
+        int numSmallLandPlots = garden.getNumPlotsWithAreaGreaterOrEqualTo(area);
 
-        for (int i = 1; i <= numPlots; i++) {
-            int plotArea = garden.getPlot(i).getArea();
-            if (plotArea < area) {
-                count++;
-            }
-        }
-
-        return count;
+        return numPlots - numSmallLandPlots;
     }
 
 }

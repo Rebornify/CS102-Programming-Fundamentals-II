@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 
-
 public class TicketUtilityTest {
     public static void main(String[] args) {
         ArrayList<Ticket> tickets = new ArrayList<Ticket>();
@@ -16,7 +15,6 @@ public class TicketUtilityTest {
         tickets.add(t3);
         tickets.add(t4);
         tickets.add(t5);
-
 
         System.out.println("Ticket 1: " + t1.calculatePrice());
         System.out.println("Ticket 2: " + t2.calculatePrice());
