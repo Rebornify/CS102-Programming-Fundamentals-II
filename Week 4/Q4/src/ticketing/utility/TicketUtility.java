@@ -1,7 +1,6 @@
 package ticketing.utility;
 
 import java.util.*;
-
 import ticketing.entity.*;
 
 public class TicketUtility {

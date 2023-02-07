@@ -1,1 +1,1 @@
-javac -d classes -cp classes -sourcepath src src/ticketing/test/TicketUtilityTest.java
+javac -d classes -cp "classes;src" src/ticketing/test/TicketUtilityTest.java
