@@ -1,0 +1,1 @@
+javac -d out -cp "mailapi-1.5.5.jar;source" source/demo/Tester.java

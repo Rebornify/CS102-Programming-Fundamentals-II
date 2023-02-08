@@ -1,1 +1,1 @@
-javac -d output src/Human.java
+javac -d output src/first/second/Human.java
