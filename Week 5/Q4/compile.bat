@@ -1,1 +1,1 @@
-javac -d my_compiled -cp "ben_code;download;my_code" my_code/smu/bidding/App.java
+javac -d my_compiled -cp "ben_code;my_code" my_code/smu/bidding/App.java
