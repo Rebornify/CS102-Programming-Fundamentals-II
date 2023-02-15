@@ -1,3 +1,5 @@
+package data.util;
+
 public class Output {
     private String success;
     
