@@ -40,9 +40,26 @@ public class Q1 {
      * Another example: if n is 10245, the possible pair of digits are 10,24, 2(02),45
      */
     public static int getSmallestPair(int number){
-        // insert your code here.
+        if (number < 10) {
+            return -1;
+        }
 
-        return 0; // to make this code compile. Please modify accordingly!
+        String strNumber = "" + number;
+
+        int smallest = (strNumber.charAt(0) - '0') * 10 + (strNumber.charAt(1) - '0');
+
+        for (int i = 1; i < strNumber.length() - 1; i++) {
+            int first = strNumber.charAt(i) - '0';
+            int second = strNumber.charAt(i + 1) - '0';
+
+            int pair = first * 10 + second;
+            
+            if (pair < smallest) {
+                smallest = pair;
+            }
+        }
+
+        return smallest;
     }
 
 
