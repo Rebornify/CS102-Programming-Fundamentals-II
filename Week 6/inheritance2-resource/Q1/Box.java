@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Box {
     private int length;
     private int breadth;
@@ -30,5 +32,10 @@ public class Box {
     @Override
     public String toString() {
         return "Box [length=" + length + ", breadth=" + breadth + ", height=" + height + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(length, breadth, height);
     }
 }

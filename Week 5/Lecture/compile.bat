@@ -1,1 +1,0 @@
-javac -d output src/first/second/Human.java

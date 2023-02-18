@@ -1,8 +1,8 @@
 public class BoxTest {
 
     public static void main(String[] args) {
-        Box b1 = new Box (3,2,1);
-        Box b2 = new Box (3,2,1);
+        Box b1 = new Box(3, 2, 1);
+        Box b2 = new Box(3, 2, 1);
 
         System.out.println("testing equals:");
         // b1.equals(b2) and b2.equals(b1) should return true
@@ -17,7 +17,7 @@ public class BoxTest {
         System.out.println();
 
         System.out.println("testing clone:");
-        Box b3 = (Box)b1.clone();
+        Box b3 = (Box) b1.clone();
         System.out.println("b1 :" + b1);
         System.out.println("b3 :" + b3);
         System.out.println();

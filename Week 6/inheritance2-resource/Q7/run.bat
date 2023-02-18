@@ -1,0 +1,1 @@
+java -cp "library/*;classes" data.DataApp

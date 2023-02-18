@@ -25,7 +25,5 @@ public class CounterTest {
             System.out.print(minMaxCounter.getValue() + ", ");
         }
 
-
-
     }
 }

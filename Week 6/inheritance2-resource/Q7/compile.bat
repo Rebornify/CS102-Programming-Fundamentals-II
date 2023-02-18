@@ -1,0 +1,1 @@
+javac -d classes -cp library/* -sourcepath src src/data/DataApp.java
