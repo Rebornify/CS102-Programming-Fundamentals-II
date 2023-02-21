@@ -1,0 +1,16 @@
+1. checked vs uncked
+    1) compile it and there is a compile error
+    2) look at the hierachy
+
+2. try-with-resource
+    try (<instance of AutoClosable>) {
+
+    }
+
+3. files
+    -> input
+    Scanner sc = new Scanner(new File(...));
+
+    -> output
+    Console: System.out.println(...)
+    File:    PrintStream out = new PrintStream(FileOutputStream("name", true));

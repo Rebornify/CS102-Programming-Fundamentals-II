@@ -31,14 +31,20 @@ public class Q2c {
         for (School sch : schools) {
             List<Student> listOfStudents = sch.getStudents();
             for (Student s1 : listOfStudents) {
+                boolean hasSibling = false;
                 for (Student s2 : listOfStudents) {
                     if (s1.getParent().equals(s2.getParent()) && !s1.equals(s2)) {
+                        hasSibling = true;
                         count++;
+                    }
+
+                    if (hasSibling) {
+                        break;
                     }
                 }
             }
         }
 
-       return count / 2;
+       return count;
     }
 }
