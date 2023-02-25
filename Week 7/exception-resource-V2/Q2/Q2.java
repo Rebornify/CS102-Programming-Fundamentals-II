@@ -1,7 +1,7 @@
-import java.util.*;
+import java.util.Scanner;
 import java.io.*;
 
-public class Program {
+public class Q2 {
     public static Scanner getScanner() {
         Scanner sc = new Scanner(System.in);
         while (true) {
@@ -19,6 +19,7 @@ public class Program {
     public static void main(String[] args) {
         try (Scanner sc = getScanner()) {
             int sum = 0;
+
             while (sc.hasNext()) {
                 sum += sc.nextInt();
             }

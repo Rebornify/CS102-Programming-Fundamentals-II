@@ -1,3 +1,6 @@
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.PrintStream;
 import java.util.*;
 
 public class ProductTest {
@@ -11,7 +14,12 @@ public class ProductTest {
   }
 
   public static void save(ArrayList<Product> productList, String pathAndFileName){
-    //TODO: goes through products and saves each Product as a line in file
-    //format: name,quantity,price
+    try (PrintStream out = new PrintStream(new FileOutputStream(pathAndFileName, true))) {
+      for (Product product : productList) {
+        out.println(product.getName() + "," + product.getQuantity() + "," + product.getPrice());
+      }
+    } catch (FileNotFoundException e) {
+      System.out.println(pathAndFileName + " is invalid");
+    }
   }
 }
