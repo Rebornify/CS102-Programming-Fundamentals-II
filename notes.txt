@@ -1,6 +1,8 @@
-1. checked vs uncked
+1. checked vs unchecked
     1) compile it and there is a compile error
     2) look at the hierachy
+    3) if you're catching a checked exception, you must ensure the try block
+        has a statement that throws the exception (EXCEPT EXCEPTION / THROWABLE)
 
 2. try-with-resource
     try (<instance of AutoClosable>) {
