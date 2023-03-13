@@ -1,5 +1,3 @@
-import java.io.FilenameFilter;
-
 import java.io.*;
 
 public class TextFileReader {

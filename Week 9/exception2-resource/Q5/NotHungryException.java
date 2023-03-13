@@ -1,5 +1,5 @@
-public class NotHungryException extends java.lang.Exception {
-    NotHungryException(String msg) {
+public class NotHungryException extends Exception {
+    public NotHungryException(String msg) {
         super(msg);
     }
 }

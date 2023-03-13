@@ -10,12 +10,14 @@ public class PageDownloader {
             System.out.print("Enter the URL> ");
             String websiteURL = console.nextLine();
 
-            try (Scanner sc = new Scanner(new URL(websiteURL) openStream())) {
+            try (Scanner sc = new Scanner(new URL(websiteURL).openStream())) {
                 while (sc.hasNext()) {
                     System.out.println(sc.nextLine());
                 }
 
                 return;
+            } catch (MalformedURLException e) {
+                System.out.println("Invalid URL!");
             } catch (IOException e) {
                 System.out.println("Invalid URL!");
             }
